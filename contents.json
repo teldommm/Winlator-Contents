@@ -39,6 +39,7 @@
     "type": "Box64",
     "verName": "0.4.4",
     "verCode": "1",
+    "recommended": true,
     "remoteUrl": "https://github.com/teldommm/Winlator-Contents/raw/refs/heads/main/Box64/box64-0.4.4.wcp"
   },
   {
@@ -117,6 +118,7 @@
     "type": "DXVK",
     "verName": "2.6.2-arm64ec-gplasync",
     "verCode": "0",
+    "recommended": true,
     "remoteUrl": "https://github.com/teldommm/Winlator-Contents/raw/refs/heads/main/DXVK/dxvk-2.6.2-arm64ec-gplasync.wcp"
   },
   {
@@ -231,6 +233,7 @@
     "type": "FEXCore",
     "verName": "2610",
     "verCode": "0",
+    "recommended": true,
     "remoteUrl": "https://github.com/teldommm/Winlator-Contents/raw/refs/heads/main/FEXCore/2610.wcp"
   },
   {
@@ -303,6 +306,7 @@
     "type": "VKD3D",
     "verName": "3.0b-2763dd2",
     "verCode": "0",
+    "recommended": true,
     "remoteUrl": "https://github.com/teldommm/Winlator-Contents/raw/refs/heads/main/VKD3D/vkd3d-proton-3.0b-2763dd2.wcp"
   },
   {
@@ -315,12 +319,14 @@
     "type": "Wine",
     "verName": "Proton.9.0-x86_64",
     "verCode": "1",
+    "recommended": true,
     "remoteUrl": "https://github.com/teldommm/Winlator-Contents/raw/refs/heads/main/WINE/Proton.9.0-x86_64.wcp"
   },
   {
     "type": "Wine",
     "verName": "proton-11.0-2-arm64ec-wl",
     "verCode": "1",
+    "recommended": true,
     "remoteUrl": "https://github.com/teldommm/Winlator-Contents/raw/refs/heads/main/WINE/proton-11.0-2-arm64ec-wl.wcp"
   },
   {
@@ -357,6 +363,7 @@
     "type": "WOWBox64",
     "verName": "0.4.4",
     "verCode": "1",
+    "recommended": true,
     "remoteUrl": "https://github.com/teldommm/Winlator-Contents/raw/refs/heads/main/WOWBox64/Wowbox64-0.4.4.wcp"
   },
   {

@@ -12,12 +12,13 @@
   * записи старого манифеста, которые не относятся к файлам в папках
     (например, Proton/Wine по ссылкам на релизы) — сохраняются как есть
   * файлов, которых уже нет в папках, в манифесте не будет
+  * поле "recommended": true у существующих записей сохраняется
   * старый манифест сохраняется в contents.json.bak
 """
 import io, json, os, re, shutil, subprocess, sys, tarfile
 from collections import Counter
 
-FALLBACK_BASE = "https://github.com/teldommm/Winlator-Contents/raw/refs/heads/main"
+FALLBACK_BASE = "https://github.com/StevenMXZ/Winlator-Contents/raw/refs/heads/main"
 TYPE_BY_DIR = {"wine": "Wine", "proton": "Proton"}
 EXTS = (".wcp", ".wcp.xz")
 
@@ -114,9 +115,10 @@ if os.path.isfile(mpath):
     shutil.copyfile(mpath, mpath + ".bak")
 with open(mpath, "w", encoding="utf-8") as f:
     f.write("[\n")
-    f.write(",\n".join(
-        '  {\n    "type": %s,\n    "verName": %s,\n    "verCode": %s,\n    "remoteUrl": %s\n  }' % tuple(
-            json.dumps(e[k], ensure_ascii=False) for k in ("type", "verName", "verCode", "remoteUrl")) for e in out))
+    def block(e):
+        keys = ["type", "verName", "verCode"] + (["recommended"] if e.get("recommended") else []) + ["remoteUrl"]
+        return "  {\n" + ",\n".join('    "%s": %s' % (k, json.dumps(e[k], ensure_ascii=False)) for k in keys) + "\n  }"
+    f.write(",\n".join(block(e) for e in out))
     f.write("\n]\n")
 
 cnt = Counter(e["type"] for e in out)
