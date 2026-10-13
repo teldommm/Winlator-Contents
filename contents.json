@@ -331,7 +331,7 @@
   },
   {
     "type": "Wine",
-    "verName": "proton-11.0-2-x86_64l",
+    "verName": "proton-11.0-2-x86_64",
     "verCode": "1",
     "remoteUrl": "https://github.com/teldommm/Winlator-Contents/raw/refs/heads/main/WINE/proton-11.0-2-x86_64.wcp"
   },
