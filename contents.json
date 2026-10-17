@@ -316,21 +316,21 @@
     "remoteUrl": "https://github.com/teldommm/Winlator-Contents/raw/refs/heads/main/VKD3D/vkd3d-proton-arm64ec-Teardown_Fix.wcp"
   },
   {
-    "type": "Wine",
+    "type": "Proton",
     "verName": "Proton.9.0-x86_64",
     "verCode": "1",
     "recommended": true,
     "remoteUrl": "https://github.com/teldommm/Winlator-Contents/raw/refs/heads/main/WINE/Proton.9.0-x86_64.wcp"
   },
   {
-    "type": "Wine",
+    "type": "Proton",
     "verName": "proton-11.0-2-arm64ec",
     "verCode": "1",
     "recommended": true,
     "remoteUrl": "https://github.com/teldommm/Winlator-Contents/raw/refs/heads/main/WINE/proton-11.0-2-arm64ec.wcp"
   },
   {
-    "type": "Wine",
+    "type": "Proton",
     "verName": "proton-11.0-2-x86_64",
     "verCode": "1",
     "remoteUrl": "https://github.com/teldommm/Winlator-Contents/raw/refs/heads/main/WINE/proton-11.0-2-x86_64.wcp"
